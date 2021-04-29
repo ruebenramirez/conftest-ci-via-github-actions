@@ -16,7 +16,8 @@ jobs:
       image: openpolicyagent/conftest@sha256:8f6fa14accab2f1facef561149894a87edb409d9c4300f800b538eda34fae0c4
 
     steps:
-      uses: actions/checkout@v2
+    - uses: actions/checkout@v2
+
     - name: Unit test Terraform
       run: |
         conftest test -p ./tests/unit.rego ./roots
