@@ -10,7 +10,7 @@ on:
       - '**.tfvars'
 
 jobs:
-  Unit-test-via-Conftest-v0.24.0:
+  Unit-test-via-Conftest-v24:
     runs-on: ubuntu-latest
     container:
       image: openpolicyagent/conftest@sha256:8f6fa14accab2f1facef561149894a87edb409d9c4300f800b538eda34fae0c4
