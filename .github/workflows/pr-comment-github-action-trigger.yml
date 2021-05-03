@@ -17,7 +17,9 @@ jobs:
         startsWith(github.event.comment.body, 'terraform apply') &&
         startsWith(github.event.issue.pull_request.url, 'https://')
     runs-on: ubuntu-latest
+
     steps:
+
     - uses: actions/checkout@v2
     - name: Which PR triggered this job?
       run: |
