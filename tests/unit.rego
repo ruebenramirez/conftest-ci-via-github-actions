@@ -18,3 +18,5 @@ deny[msg] {
   not input.resource.aws_autoscaling_group.my_asg.name
   msg = "Name the autoscaling group"
 }
+
+# testing ci 12
